@@ -1,0 +1,28 @@
+|Register_5bit
+Load => outData.OUTPUTSELECT
+Load => outData.OUTPUTSELECT
+Load => outData.OUTPUTSELECT
+Load => outData.OUTPUTSELECT
+Load => outData.OUTPUTSELECT
+Clear => outData.OUTPUTSELECT
+Clear => outData.OUTPUTSELECT
+Clear => outData.OUTPUTSELECT
+Clear => outData.OUTPUTSELECT
+Clear => outData.OUTPUTSELECT
+Clock => outData[0]~reg0.CLK
+Clock => outData[1]~reg0.CLK
+Clock => outData[2]~reg0.CLK
+Clock => outData[3]~reg0.CLK
+Clock => outData[4]~reg0.CLK
+inData[0] => outData.DATAB
+inData[1] => outData.DATAB
+inData[2] => outData.DATAB
+inData[3] => outData.DATAB
+inData[4] => outData.DATAB
+outData[0] <= outData[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outData[1] <= outData[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outData[2] <= outData[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outData[3] <= outData[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outData[4] <= outData[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

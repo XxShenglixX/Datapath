@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Oct 01 14:52:18 2014
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : Register_8bit
+Top-level Entity Name : Register_8bit
+Family : Cyclone II
+Total logic elements : 9
+    Total combinational functions : 9
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.551 ns
+From           : Address[0]
+To             : altsyncram:RAM_rtl_0|altsyncram_ohd1:auto_generated|ram_block1a0~porta_address_reg0
+From Clock     : --
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.709 ns
+From           : altsyncram:RAM_rtl_0|altsyncram_ohd1:auto_generated|ram_block1a0~portb_address_reg4
+To             : outData[3]
+From Clock     : Clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -3.494 ns
+From           : inData[0]
+To             : altsyncram:RAM_rtl_0|altsyncram_ohd1:auto_generated|ram_block1a0~porta_datain_reg0
+From Clock     : --
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 195.01 MHz ( period = 5.128 ns )
+From           : altsyncram:RAM_rtl_0|altsyncram_ohd1:auto_generated|ram_block1a0~porta_datain_reg7
+To             : altsyncram:RAM_rtl_0|altsyncram_ohd1:auto_generated|ram_block1a7~porta_memory_reg0
+From Clock     : Clock
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,19 @@
+module RAM_32_x_8bit(Address,WE,Clock,inData,outData);
+
+input WE,Clock ;
+input [4:0] Address;
+input [7:0] inData ;
+
+reg [7:0] RAM [31:0];
+
+output reg [7:0] outData ;
+
+always @ (posedge Clock)
+begin
+			if (WE)
+				RAM[Address] <= inData;
+			else
+				outData <= RAM[Address];
+end
+
+endmodule
