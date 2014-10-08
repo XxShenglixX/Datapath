@@ -1,4 +1,4 @@
-module RAM_32_x_8bit(Address,WE,Clock,inData,outData)
+module RAM_32_x_8bit(Address,WE,Clock,inData,outData);
 
 input WE,Clock ;
 input [4:0] Address;

@@ -10,10 +10,10 @@ output reg [7:0] outData ;
 
 always @ (posedge Clock)
 begin
-			if (WE)
-				RAM[Address] <= inData;
-			else
-				outData <= RAM[Address];
+      if (WE)
+        RAM[Address] <= inData;
+      else
+        outData <= RAM[Address];
 end
 
 endmodule
