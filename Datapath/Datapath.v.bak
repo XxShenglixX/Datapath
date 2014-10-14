@@ -1,0 +1,32 @@
+module Datapath(Input,IRload,JMPmux,PCload,Meminst,MemWr,Asel,Aload,Reset,Clock,Sub,IR,Aeq0,Apos,Output);
+
+input [7:0] Input;
+input IRload,JMPmux,PCload,Meminst,MemWr,Aload,Reset,Clock,Sub ;
+input [1:0]Asel;
+output Aeq0 ,Apos ;
+output IR[7:5] ;
+output Output
+
+wire [7:0] RamOut,IROut,AOut,Mux8Out
+wire [4:0] Mux5Out,PCOut,AddressIn
+
+assign Mux5Out = (JMPMux == 1) ? IROut[4:0] : (PCOut+1) ; 
+assign IR[7:5] = IROut[7:5];
+
+
+
+Mux_2_4_8bit _8bit_mux(Asel,InA,Input,RamOut,InC,Mux8Out);
+Register_8bit Areg(Aload,Reset,Clock,Mux8Out,AOut);
+
+
+RAM_32_x_8bit RAM(AddressIn,MemWr,Clock,inData,outData);
+
+Register_5bit PC(PCload,Reset,Clock,inData,PCOut);
+
+
+
+
+Register_8bit IRreg(IRload,Reset,Clock,RamOut,IROut);
+
+
+endmodule

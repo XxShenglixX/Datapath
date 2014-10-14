@@ -1,0 +1,15 @@
+module Mux_2_4_8bit(Sel,InA,InB,InC,InD,OutData);
+
+input [1:0]Sel;
+input [7:0]InA,InB,InC,InD ;
+output reg[7:0]OutData;
+
+always @ (Sel,InA,InB,InC,InD)
+	case(Sel)
+		0: OutData = InA ;
+		1: OutData = InB ;
+		2: OutData = InC ;
+		3: OutData = InD ;
+		default: ;
+	endcase
+endmodule

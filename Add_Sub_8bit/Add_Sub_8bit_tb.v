@@ -1,0 +1,21 @@
+module Add_Sub_8bit_tb();
+
+// set input as register and output as wires  
+reg Sub ;
+reg [7:0] InA,InB ;
+wire [7:0] Output ;
+
+//instantiate design code
+Add_Sub_8bit testing(Sub,InA,InB,Output);
+
+//Test vectors start here
+initial
+begin
+//initialize all inputs
+#0  Sub = 0 ; InA = 8'd0 ; InB = 8'd0 ;
+#10 InA = 8'd10 ; InB = 8'd5 ; //Expect output 15
+#10 InA = 8'd1 ; InB = 8'd1 ; //Expect output 2
+#10 Sub = 1 ; InA = 8'd3 ; InB = 8'd3 ; //Expect output 0
+#10 Sub = 1 ; InA = 8'd1 ; InB = 8'd2 ; //Expect -1
+end
+endmodule

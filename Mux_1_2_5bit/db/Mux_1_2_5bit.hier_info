@@ -1,0 +1,23 @@
+|Mux_1_2_5bit
+Sel => Output.OUTPUTSELECT
+Sel => Output.OUTPUTSELECT
+Sel => Output.OUTPUTSELECT
+Sel => Output.OUTPUTSELECT
+Sel => Output.OUTPUTSELECT
+InA[0] => Output.DATAB
+InA[1] => Output.DATAB
+InA[2] => Output.DATAB
+InA[3] => Output.DATAB
+InA[4] => Output.DATAB
+InB[0] => Output.DATAA
+InB[1] => Output.DATAA
+InB[2] => Output.DATAA
+InB[3] => Output.DATAA
+InB[4] => Output.DATAA
+Output[0] <= Output.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= Output.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= Output.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= Output.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= Output.DB_MAX_OUTPUT_PORT_TYPE
+
+
